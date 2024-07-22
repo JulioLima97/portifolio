@@ -1,0 +1,93 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+  border-bottom: 1px solid black;
+  height: 113px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1001;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.popup.active,
+.overlay.active {
+  display: flex;
+  opacity: 1;
+}
+
+.overlay__menu_btn {
+  position: absolute;
+  top: 240px;
+  right: 90px;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+.title {
+  font-family: var(--first-font);
+  font-size: 2rem;
+}
+.subtitle {
+  font-family: var(--second-font);
+  color: black;
+  font-size: 1.5rem;
+}
+.nav__menu {
+  background-color: #fff;
+  width: 50%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.nav__menu__item {
+  /* Suas regras para .nav__menu__item */
+}
+
+.nav__menu__item__link {
+  font-family: var(--second-font);
+  text-decoration: none;
+  color: black;
+  margin: 10px 0;
+}
