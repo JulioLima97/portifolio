@@ -1,0 +1,45 @@
+.sobre {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .sobre__imagem {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 20px;
+  }
+  
+  .sobre__titulo {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .sobre__jornada, .sobre__projetos {
+    margin-bottom: 20px;
+  }
+  
+  .sobre__subtitulo {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .sobre__lista {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sobre__item {
+    margin-bottom: 10px;
+  }
+  
+  .sobre__link {
+    color: #0066cc;
+    text-decoration: none;
+  }
+  
+  .sobre__link:hover {
+    text-decoration: underline;
+  }
+  

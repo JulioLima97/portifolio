@@ -1,11 +1,12 @@
 :root {
-  --first-font: "Manrope", sans-serif;
-  --second-font: "Vollkorn", serif;
+  --first-font: "Vollkorn", serif;
+  --second-font: "Manrope";
 }
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  color: #000;
 }
 li {
   list-style: none;
@@ -18,3 +19,25 @@ a {
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap");
 
 @import url(../blocks/page.css);
+@import url(../blocks/header.css);
+@import url(../blocks/info.css);
+@import url(../blocks/projetos.css);
+@import url(../blocks/sobre.css);
+@import url(../blocks/footer.css);
+
+.luz {
+  position: absolute;  /* Permite posicionar o elemento livremente */
+  top: 0; /* Posiciona o topo do elemento */
+  right: 0;
+  width: 200px;  /* Ajuste conforme necessário */
+  height: 200px; /* Ajuste conforme necessário */
+  background: #831ED2;
+  filter: blur(50px);  /* Adiciona o efeito de blur */
+  pointer-events: none;  /* Faz com que o elemento não interfira em cliques */
+  z-index: 0;
+  opacity: .49;
+}
+.luz__botton{
+  top: 300px;
+  left: 0;
+}
