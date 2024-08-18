@@ -1,6 +1,6 @@
 :root {
-  --first-font: "Vollkorn", serif;
-  --second-font: "Manrope";
+  --first-font: "arial", serif;
+  --second-font: "Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif";
 }
 * {
   margin: 0;
