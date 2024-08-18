@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { saveAs } from "file-saver";
 import "../../blocks/header.css";
@@ -23,6 +23,23 @@ export default function Header() {
   function downloadCV() {
     saveAs("../../utils/Julio-lima", "CV-Julio-Lima.pdf"); // Caminho para o seu arquivo PDF
   }
+
+  // Fechar popup ao pressionar a tecla "Esc"
+  useEffect(() => {
+    function handleKeyDown(event) {
+      if (event.key === "Escape") {
+        closePopup();
+      }
+    }
+
+    // Adiciona o event listener ao montar o componente
+    document.addEventListener("keydown", handleKeyDown);
+
+    // Remove o event listener ao desmontar o componente
+    return () => {
+      document.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
 
   return (
     <header className="header">
