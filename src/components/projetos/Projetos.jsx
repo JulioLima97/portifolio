@@ -14,22 +14,19 @@ export default function Projetos() {
     getProjetos();
   }, []);
 
-
-
   return (
     <section className="projetos__info" id="projetos">
       <h2 className="projetos__info_title">Lista de projetos</h2>
       <ul className="projetos">
         {projetos.map((projeto) => {
           return (
-            <li className="projeto">
+            <li className="projeto" key={projeto.id}>
               <div className="projeto__info">
                 <h2 className="projeto__info_title">{projeto.name}</h2>
-                <p className="projeto__info_descricao">{console.log(projeto.topics)}</p>
               </div>
-              <a 
-                className="projeto__info_btn" 
-                href={projeto.html_url} 
+              <a
+                className="projeto__info_btn"
+                href={projeto.html_url}
                 target="_blank"
               >
                 Acessar projeto
