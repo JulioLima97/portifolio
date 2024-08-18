@@ -21,10 +21,9 @@ export default function Header() {
   }
 
   function downloadCV() {
-    saveAs("../../utils/Julio-lima", "CV-Julio-Lima.pdf"); // Caminho para o seu arquivo PDF
+    saveAs("../../utils/Julio-lima", "CV-Julio-Lima.pdf");
   }
 
-  // Fechar popup ao pressionar a tecla "Esc"
   useEffect(() => {
     function handleKeyDown(event) {
       if (event.key === "Escape") {
@@ -32,10 +31,8 @@ export default function Header() {
       }
     }
 
-    // Adiciona o event listener ao montar o componente
     document.addEventListener("keydown", handleKeyDown);
 
-    // Remove o event listener ao desmontar o componente
     return () => {
       document.removeEventListener("keydown", handleKeyDown);
     };
@@ -45,7 +42,7 @@ export default function Header() {
     <header className="header">
       <Luz className="luz" />
       <nav className="nav">
-        <h1 className="title">JL</h1>
+        <h1 className="title">Julio Lima</h1>
         <a href="#" className="subtitle" onClick={downloadCV}>
           Download CV
         </a>
