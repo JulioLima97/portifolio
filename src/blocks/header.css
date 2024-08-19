@@ -1,4 +1,4 @@
-/* Estilos mobile-first (até 475px) */
+
 
 .header {
   display: flex;
@@ -93,19 +93,12 @@
   position: relative;
 }
 
-.nav__menu__item {
-  /* Suas regras para .nav__menu__item */
-}
-
 .nav__menu__item__link {
   font-family: var(--second-font);
   text-decoration: none;
   color: black;
   margin: 10px 0;
 }
-
-/* Media queries para dispositivos maiores */
-
 @media (min-width: 476px) {
   .nav {
     flex-direction: row;

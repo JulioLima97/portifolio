@@ -1,105 +1,101 @@
-/* Estilo básico para dispositivos móveis */
 .projetos__info {
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 10px; /* Reduzido para dispositivos móveis */
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 10px;
+}
+.projetos__info_title {
+  font-family: var(--first-font);
+  font-weight: bolder;
+  margin: 0 0 30px;
+  font-size: 22px;
+  text-align: center;
+}
+.projetos {
+}
+.projeto {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background: #fff7f7;
+  border: 2px solid #000;
+  padding: 10px;
+  border-radius: 25px;
+  margin-bottom: 20px;
+}
+.projeto__info {
+}
+.projeto__info_title {
+  font-weight: 500;
+  text-align: center;
+  font-size: 18px;
+  font-family: var(--first-font);
+  margin-bottom: 10px;
+}
+.projeto__info_descricao {
+  font-family: var(--second-font);
+  margin-bottom: 10px;
+}
+.projeto__info_btn {
+  font-family: var(--second-font);
+  font-weight: 100;
+  color: #000;
+  background-color: transparent;
+  border: 1px solid #000;
+  text-align: center;
+  padding: 6px 12px;
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  margin: 10px 0;
+  display: block;
+}
+
+.projeto__info_btn:hover {
+  background-color: #333;
+  transform: scale(1.05);
+  color: #f2f2f2;
+}
+
+@media (min-width: 768px) {
+  .projetos__info {
+    margin: 0 0 75px;
   }
   .projetos__info_title {
-    font-family: var(--first-font);
-    font-weight: bolder;
-    margin: 0 0 30px;
-    font-size: 22px; /* Ajustado para dispositivos móveis */
-    text-align: center;
-  }
-  .projetos {
-  }
-  .projeto {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    background: #fff7f7;
-    border: 2px solid #000;
-    padding: 10px;
-    border-radius: 25px;
-    margin-bottom: 20px; /* Espaçamento entre projetos */
+    font-size: 24px;
   }
   .projeto__info {
+    width: 70%;
+    text-align: center;
+  }
+  .projeto {
+    flex-direction: row;
+    align-items: center;
   }
   .projeto__info_title {
-    font-weight: 500;
+    width: 70%;
     text-align: center;
-    font-size: 18px; /* Ajustado para dispositivos móveis */
-    font-family: var(--first-font);
-    margin-bottom: 10px;
+    font-size: 20px;
   }
   .projeto__info_descricao {
-    font-family: var(--second-font);
-    margin-bottom: 10px;
+    width: 70%;
   }
   .projeto__info_btn {
-    font-family: var(--second-font);
-    font-weight: 100;
-    color: #000; 
-    background-color: transparent; 
-    border: 1px solid #000; 
-    text-align: center;
-    padding: 6px 12px; /* Ajustado para dispositivos móveis */
-    width: 100%; /* Botão ocupa largura total */
-    height: auto;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.3s;
-    margin: 10px 0;
-    display: block;
+    padding: 8px 16px;
+    width: auto;
+    margin: 0 10px;
   }
-  
-  .projeto__info_btn:hover {
-    background-color: #333;
-    transform: scale(1.05);
-    color: #f2f2f2;
+}
+
+@media (min-width: 1024px) {
+  .projetos__info {
+    margin: 0 0 100px;
   }
-  
-  /* Media Queries para tablets */
-  @media (min-width: 768px) {
-    .projetos__info {
-      margin: 0 0 75px; /* Aumentado para tablets */
-    }
-    .projetos__info_title {
-      font-size: 24px; /* Ajustado para tablets */
-    }
-    .projeto__info{
-      width: 70%;
-      text-align: center;
-    }
-    .projeto {
-      flex-direction: row; /* Altera para linha em telas maiores */
-      align-items: center;
-    }
-    .projeto__info_title {
-      width: 70%;
-      text-align: center;
-      font-size: 20px; /* Ajustado para tablets */
-    }
-    .projeto__info_descricao{
-      width: 70%;
-    }
-    .projeto__info_btn {
-      padding: 8px 16px; /* Ajustado para tablets */
-      width: auto; /* Removido largura total */
-      margin: 0 10px; /* Ajusta a margem */
-    }
+  .projetos__info_title {
+    font-size: 30px;
   }
-  
-  /* Media Queries para desktops */
-  @media (min-width: 1024px) {
-    .projetos__info {
-      margin: 0 0 100px; /* Aumentado para desktops */
-    }
-    .projetos__info_title {
-      font-size: 30px; /* Ajustado para desktops */
-    }
-    .projeto__info_title {
-      font-size: 23px; /* Ajustado para desktops */
-    }
+  .projeto__info_title {
+    font-size: 23px;
   }
-  
+}

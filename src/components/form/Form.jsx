@@ -63,6 +63,7 @@ export default function ContactForm() {
             value={formData.name}
             onChange={handleInputChange}
             className="contact-form__input"
+            placeholder="Digite seu nome"
           />
           {errors.name && <span className="contact-form__error">{errors.name}</span>}
         </div>
@@ -75,6 +76,7 @@ export default function ContactForm() {
             value={formData.email}
             onChange={handleInputChange}
             className="contact-form__input"
+            placeholder="Digite seu e-mail"
           />
           {errors.email && <span className="contact-form__error">{errors.email}</span>}
         </div>
@@ -86,6 +88,7 @@ export default function ContactForm() {
             value={formData.message}
             onChange={handleInputChange}
             className="contact-form__textarea"
+            placeholder="Digite sua mensagem"
           />
           {errors.message && <span className="contact-form__error">{errors.message}</span>}
         </div>
