@@ -1,0 +1,31 @@
+.info {
+    margin: 100px 0;
+}
+.info__name {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  margin: 0 26px 20px 0;
+}
+.info__line {
+  width: 30px;
+  border: 2px solid #000;
+  background-color: #000;
+}
+.info__line_sub{
+    margin: 21px 0 12px;
+}
+.info__name--title {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 0 10px;
+  font-family: var(--first-font);
+}
+.info__title {
+    font-size: 80px;
+    font-family: var(--first-font);
+}
+.info__subtitle {
+    font-family: var(--second-font);
+    font-weight: 500;
+}
